@@ -1,6 +1,7 @@
-const fs = require('fs');
+// const fs = require('fs');
 const inquirer = require('inquirer');
-const {Circle, Square, Triangle} = require('./lib/shapes');
+const { writeFile } = require('fs/promises');
+const { makeLogo }= require('./lib/generateLogo');
 
 const questions = [
     {
@@ -29,22 +30,20 @@ const questions = [
     }
 ];
 
-function newShape(data) {
-    // if (data.name === "circle") {
-    //     return new Circle;
-    // } else if (data.name === "square") {
-    //     return new Square;
-    // } else if (data.name === "triangle") {
-    //     return new Triangle;
-    // }
-    console.log(data.name);
-}
+
 
 function getLogo() {
     inquirer.prompt(questions)
-    .then(data => {
-
-    });
+    // .then(data =>  {makeLogo(data)})
+    .then(data => writeFile('./examples/test.svg', makeLogo(data)));
+    // .then(data => {
+    //     // console.log(newShape(data));
+    //     // return writeFile('./examples/test.svg', (makeLogo(data)));
+    // })
+    // .then(() => {
+    //     console.log('Logo generated!');
+    // })
+    // .catch((err) => console.log('Error, please try again.'));
 }
 
 getLogo();
