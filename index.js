@@ -43,7 +43,7 @@ function newShape(data) {
 function getLogo() {
     inquirer.prompt(questions)
     .then(data => {
-        
+
     });
 }
 
