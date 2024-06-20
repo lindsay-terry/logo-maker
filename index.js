@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const {Circle, Square, Triangle} = require('./lib/shapes');
 
 const questions = [
     {
@@ -28,8 +29,22 @@ const questions = [
     }
 ];
 
+function newShape(data) {
+    // if (data.name === "circle") {
+    //     return new Circle;
+    // } else if (data.name === "square") {
+    //     return new Square;
+    // } else if (data.name === "triangle") {
+    //     return new Triangle;
+    // }
+    console.log(data.name);
+}
+
 function getLogo() {
-    inquirer.prompt(questions);
+    inquirer.prompt(questions)
+    .then(data => {
+        
+    });
 }
 
 getLogo();
