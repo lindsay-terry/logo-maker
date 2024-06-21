@@ -1,1 +1,1 @@
-<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"> <circle cx="145" cy="100" r="100" fill="yellow" /> <text x="145" y="125" text-anchor="middle" fill="red" font-size="64"> BAR </text>  </svg>
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"> <rect x="40" y="10" width="200" height="200" fill="#8ace00" /> <text x="145" y="125" text-anchor="middle" fill="black" font-size="35"> alan xcx </text>  </svg>
