@@ -22,7 +22,7 @@ npm i to install dependencies (inquirer for prompts, jest for testing).
 ## Usage
 After cloning or forking the repository and ensuring node is installed and all dependencies, navigate to the repository folder and run node index.js.  From there, a series of questions will populate via console.  The application will ask the user to enter a max of 3 letters for the text on the logo, to enter a color (text or hexidecimal) for the text, and select a shape for the logo to be in.  The final question is choosing a color for the shape, and then a message appears in the console indicating that a logo has been generated and can be found in the examples folder of the repository.  From there, the user can view the raw SVG code and preview the logo.
 
-[Recording of application demonstration]()
+[Recording of application demonstration](https://drive.google.com/file/d/1o5ln9BgVPqjOfaVM8_SI1O7kEM7-s7xb/view?usp=sharing)
 
 ![Screenshot of application running in console](./assets/images/logo-console.png)
 ![Screenshot of generated logo](./assets/images/logo.png)
