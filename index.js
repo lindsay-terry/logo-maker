@@ -1,4 +1,3 @@
-// const fs = require('fs');
 const inquirer = require('inquirer');
 const { writeFile } = require('fs/promises');
 const { makeLogo }= require('./lib/generateLogo');
@@ -51,7 +50,8 @@ const questions = [
 //on data collected, using the function that compiles it all in the correct syntax
 function getLogo() {
     inquirer.prompt(questions)
-    .then(data => writeFile('./examples/test.svg', makeLogo(data)))
+    .then(data => writeFile(`./examples/${data.text}.svg`, makeLogo(data)))
+    .then(() => console.log('Logo finished!  See the examples folder for your logo.'))
     .catch((err) => console.log('Error, please try again.'));
 }
 
